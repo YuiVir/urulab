@@ -17,7 +17,7 @@ header {
   height: 500px;  
   color: #fff;
   text-align: center;
-	background: url("//img/shikki.JPG") no-repeat center center;
+	background: url("../img/shikki.JPG") no-repeat center center;
   background-size: cover;
 }
 
@@ -46,9 +46,6 @@ header {
   margin: 0;
   font-size: 4em;
   line-height: 1.2em;
-}
-.inner h0{
-
 }
 
 .inner p {
