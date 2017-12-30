@@ -1,0 +1,105 @@
+header {
+  background: #111;
+}
+
+.headline {
+  position: relative;
+  height: 500px;  
+  color: #fff;
+  text-align: center;
+	background: url("../img/shikki.JPG") no-repeat center center;
+  background-size: cover;
+}
+
+.headline:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.5); /*ヘッドラインの画像の透過度*/
+}
+
+.inner {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  opacity: 0;
+  z-index: 10;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  -webkit-animation: fade-in 0.75s 0.25s ease-in forwards;
+          animation: fade-in 0.75s 0.25s ease-in forwards;
+}
+.inner h1 {
+  margin: 0;
+  font-size: 4em;
+  font-style: italic;  
+  line-height: 1.2em;
+}
+
+.inner p {
+  margin: 0;
+  font-size: 1.4em;
+  font-family: serif;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+nav.scrolled {
+  background: rgba(17, 17, 17, 0.8);
+}
+nav ul {
+  float: right;
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+}
+nav li {
+  float: left;
+}
+nav a {
+  font-size: 0.9em;
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 0 0 20px;
+  display: block;
+  transition: all .3s
+}
+nav a:hover {
+  color: #ededed;
+  letter-spacing: 3px
+}
+
+
+section {
+  width: 100%;
+  margin: 25px auto;
+  padding: 20px;
+  max-width: 800px;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
