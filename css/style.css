@@ -17,9 +17,6 @@ header {
   height: 500px;  
   color: #fff;
   text-align: center;
-}
-
-.headline_bg{
 	background: url("//img/shikki.JPG") no-repeat center center;
   background-size: cover;
 }
